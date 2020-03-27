@@ -7,6 +7,7 @@
 #	python simple_request.py 
 
 # import the necessary packages
+import os
 from keras.applications import ResNet50
 from keras.models import load_model
 from keras.preprocessing.image import img_to_array
@@ -38,7 +39,8 @@ CLIENT_SLEEP = 0.25
 
 # initialize our Flask application, Redis server, and Keras model
 app = flask.Flask(__name__)
-db = redis.StrictRedis(host="localhost", port=6379, db=0)
+#db = redis.StrictRedis(host="localhost", port=6379, db=0)
+db = redis.from_url(os.environ['REDISCLOUD_URL'])
 model = None
 
 def base64_encode_image(a):
