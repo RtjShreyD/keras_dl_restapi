@@ -1,1 +1,1 @@
-web: gunicorn --bind 127.0.0.1:$PORT run_keras_server:app
+web: gunicorn run_keras_server:app
