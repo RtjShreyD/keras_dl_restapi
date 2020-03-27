@@ -1,1 +1,1 @@
-web: gunicorn --bind 0.0.0.0:$PORT run_keras_server:app
+web: uwsgi uwsgi.ini
