@@ -12,7 +12,7 @@ $ sudo make install
 $ redis-server
 
 ## Install all dependencies in a virtual environment for Python3
-$ pip install -u requirements.txt
+$ pip install -r requirements.txt
 
 ## USAGE
 Start the server:
