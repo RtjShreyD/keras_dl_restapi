@@ -24,7 +24,7 @@ numpy==1.18.2
 opencv-contrib-python==4.2.0.32
 Pillow==7.0.0
 protobuf==3.11.3
-PyYAML==5.3.1
+PyYAML==5.4
 redis==3.4.1
 requests==2.23.0
 scipy==1.4.1
